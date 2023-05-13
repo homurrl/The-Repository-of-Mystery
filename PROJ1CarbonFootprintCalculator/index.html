@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Carbon Footprint Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Carbon Footprint Calculator</h1>
+    <form id="carbon-form">
+      <label for="transportation">Transportation (miles driven per week)</label>
+      <input value="123" type="number" id="transportation" name="transportation" required>
+      
+      <label for="electricity">Electricity (kWh per month)</label>
+      <input value="123" type="number" id="electricity" name="electricity" required>
+      
+      <label for="natural-gas">Natural Gas (therms per month)</label>
+      <input value="123" type="number" id="natural-gas" name="natural-gas" required>
+            
+      <input type="submit" value="Calculate">
+    </form>
+    
+    <div class="results" id="carbon-results">
+    <h2>Results</h2>
+      <p id="carbonTotal"></p>
+      <ul>
+        <li id="transportationResult"></li>
+        <li id="electricityResult"></li>
+        <li id="gasResult"></li>
+      </ul>
+    </div>
+
+    <div id="pastResults">
+      <h2>Past Results</h2> <button id="clear">Clear</button>
+      <table border="1">
+        <th>Date</th>
+        <th>Transportation (kg)</th>
+        <th>Electricity (kg)</th>
+        <th>Natural Gas (kg)</th>
+        <tbody id="resultsTable">
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
